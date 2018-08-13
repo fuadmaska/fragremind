@@ -50,6 +50,8 @@ public class ReminderAddFragment extends Fragment {
     private int mYear, mMonth, mDay, mHour, mMinute;
 
 
+
+
     public ReminderAddFragment() {
         // Required empty public constructor
     }
@@ -63,7 +65,7 @@ public class ReminderAddFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_reminder_add, container, false);
 
         addedttot = view.findViewById(R.id.edttotprem);
-        addedttot.addTextChangedListener(new NumberTextWatcher(addedttot, "#,##.00"));
+        addedttot.addTextChangedListener(new NumberTextWatcher(addedttot, "#,###,##0.00"));
         addedtdate = view.findViewById(R.id.edtdateprem);
         addedtdate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,6 +144,7 @@ public class ReminderAddFragment extends Fragment {
 
 
 
+
                     FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
@@ -207,7 +210,7 @@ public class ReminderAddFragment extends Fragment {
         public NumberTextWatcher(EditText addedttot, String s) {
             df = new DecimalFormat(s);
             df.setDecimalSeparatorAlwaysShown(true);
-            dfnd = new DecimalFormat("#,##.00");
+            dfnd = new DecimalFormat("#,###,##0.00");
             this.et = addedttot;
             hasFractionalPart = false;
 

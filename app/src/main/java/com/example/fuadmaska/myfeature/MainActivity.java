@@ -1,5 +1,7 @@
 package com.example.fuadmaska.myfeature;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -30,8 +32,14 @@ public class MainActivity extends AppCompatActivity {
         tabbawah.addTab(tabbawah.newTab().setText("Reminder").setIcon(R.drawable.ic_notifications_black_24dp));
         tabbawah.addTab(tabbawah.newTab().setText("Message").setIcon(R.drawable.ic_comment_black_24dp));
         tabbawah.addTab(tabbawah.newTab().setText("Profile").setIcon(R.drawable.ic_person_black_24dp));
+        tabbawah.setSelectedTabIndicatorColor(Color.parseColor("#B71C1C"));
+        tabbawah.setTabTextColors(Color.parseColor("#757575"), Color.parseColor("#B71C1C"));
+
+
         tabbawah.setTabGravity(TabLayout.GRAVITY_FILL);
         tabbawah.setTabMode(TabLayout.MODE_SCROLLABLE);
+        tabbawah.setTabGravity(TabLayout.MODE_FIXED);
+
 
         Custom adapter = new Custom(getSupportFragmentManager());
         pageatas.setAdapter(adapter);
@@ -42,10 +50,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 pageatas.setCurrentItem(tab.getPosition());
+
+                tab.getIcon().setColorFilter(getResources().getColor(R.color.crimson), PorterDuff.Mode.SRC_IN);
+
+
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
+
+                tab.getIcon().setColorFilter(getResources().getColor(R.color.abuabu), PorterDuff.Mode.SRC_IN);
 
             }
 

@@ -13,7 +13,7 @@
     <string name="live">for live better</string>
     <string name="addreminhead">Add Reminder</string>
     <string name="select">Select Insurance Category</string>
-    <string name="inputdate">DD/MM/YYYY</string>
+    <string name="inputdate">YYYY/MM/DD</string>
     <string name="titleselectin">Select Insurance Category</string>
     <string name="titlrmndrdtl">Add Reminder Detail</string>
     <string name="totprem">Total Premi</string>
