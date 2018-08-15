@@ -12,10 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/putih">
+        android:background="@color/crimson">
 
 
         <TextView
+            android:fontFamily="@font/roboto_regular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -24,7 +25,7 @@
             android:textAllCaps="false"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/hitam"/>
+            android:textColor="@color/putih"/>
     </LinearLayout>
 
 
@@ -35,7 +36,7 @@
         android:layout_below="@id/premireminder"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="40dp"
-        android:background="@drawable/round" />
+        android:background="@drawable/logo_home" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,6 +46,7 @@
         android:padding="10dp">
 
         <TextView
+            android:fontFamily="@font/roboto_regular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -59,15 +61,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="70dp">
+            android:padding="20dp">
 
             <TextView
+                android:fontFamily="@font/roboto_regular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/register" />
 
             <TextView
+                android:fontFamily=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"

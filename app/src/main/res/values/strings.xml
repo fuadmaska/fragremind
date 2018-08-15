@@ -24,4 +24,20 @@
     <string name="save">Save</string>
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
+    <string name="claim">Claim Report</string>
+    <string name="inputclaimid">Please input your claim ID</string>
+    <string name="checkstatus">Check Status</string>
+    <string name="claimnumber">Claim Number</string>
+    <string name="numberclaim">1234567890</string>
+    <string name="btnhistoryclaim">On Process</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">WELCOME</string>
+    <string name="password">Password</string>
+    <string name="emailaddress">Email address</string>
+    <string name="forgotpasslog">Forgot password?</string>
+    <string name="btnlog">LOG IN</string>
+    <string name="claimstatus">Claim Status</string>
+    <string name="whoops">Whoops! can\'t find your ID</string>
+    <string name="checkyourid">Please check your claim ID and try again</string>
+    <string name="tryaga">Try Again</string>
 </resources>

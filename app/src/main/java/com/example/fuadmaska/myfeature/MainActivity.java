@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         tabbawah.setTabGravity(TabLayout.MODE_FIXED);
 
 
+
+
         Custom adapter = new Custom(getSupportFragmentManager());
         pageatas.setAdapter(adapter);
 

@@ -10,5 +10,9 @@
     <color name="redone">#F44336</color>
     <color name="blueone">#1976D2</color>
     <color name="abuabuan">#EEEEEE</color>
+    <color name="claiminside">#E5E5E5</color>
+    <color name="claimnumbertext">#828282</color>
+    <color name="textcolor">#BDBDBD</color>
+    <color name="merah">#B71C1C</color>
 
 </resources>

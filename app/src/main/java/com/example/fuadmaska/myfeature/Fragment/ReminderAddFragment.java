@@ -47,10 +47,6 @@ public class ReminderAddFragment extends Fragment {
             "Asuransi Umum",
             "Asuransi Kredit"};
 
-    private int mYear, mMonth, mDay, mHour, mMinute;
-
-
-
 
     public ReminderAddFragment() {
         // Required empty public constructor
@@ -133,57 +129,35 @@ public class ReminderAddFragment extends Fragment {
                 } else if (noteprem.isEmpty()) {
                     addedtnote.setError("Note must be filled");
                     addedtnote.requestFocus();
-                }else  {
+                } else {
                     ReminderListFragment rlf = new ReminderListFragment();
                     Bundle bkd = new Bundle();
-                    bkd.putString("insucateg",insucateg);
-                    bkd.putString("jmltotprem",jmltotprem);
-                    bkd.putString("dateprem",dateprem);
-                    bkd.putString("timeprem",timeprem);
-                    bkd.putString("noteprem",noteprem);
-
-
+                    bkd.putString("insucateg", insucateg);
+                    bkd.putString("jmltotprem", jmltotprem);
+                    bkd.putString("dateprem", dateprem);
+                    bkd.putString("timeprem", timeprem);
+                    bkd.putString("noteprem", noteprem);
 
 
                     FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
 
-                    fragmentTransaction.replace(R.id.container_remin,rlf);
+                    fragmentTransaction.replace(R.id.container_remin, rlf);
                     fragmentTransaction.commit();
                     rlf.setArguments(bkd);
 
 
-
                 }
-
-
-
-
 
 
             }
 
         });
         selins = view.findViewById(R.id.selectinsu);
-
         final ArrayAdapter adapter = new ArrayAdapter(this.getActivity(), android.R.layout.simple_spinner_item, jenisInsurance);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         selins.setAdapter(adapter);
-//        selins.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-//
-//                selins.setOnItemSelectedListener(this);
-//                adapter.notifyDataSetChanged();
-//
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//
-//            }
-//        });
 
 
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
