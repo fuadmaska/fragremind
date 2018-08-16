@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         Custom adapter = new Custom(getSupportFragmentManager());
         pageatas.setAdapter(adapter);
+        pageatas.setOffscreenPageLimit(adapter.getCount());
 
         pageatas.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabbawah));
 
